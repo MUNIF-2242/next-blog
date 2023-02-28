@@ -21,7 +21,7 @@ export default function Home({ posts }) {
         <h1>Hello</h1>
         <div className='posts'>
           {posts.map((post, index) => (
-            <Post post={post} />
+            <Post key={index} post={post} />
           ))}
         </div>
       </main>
